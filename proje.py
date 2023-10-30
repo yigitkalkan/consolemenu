@@ -220,15 +220,18 @@ while True:
 
     elif secim == "10":
         int_deger1 = int(input("Fibonacci dizisinin kaçıncı elemanını hesaplamak istersiniz? "))
-        int_deger2 = 8
-        int_deger3 = 21
-        int_deger4 = 13
+        int_deger2 = int(input("Fibonacci dizisinin hesaplamaya başlanacak sıra numarasını girin: "))
+        int_deger3 = int(input("Fibonacci dizisinin başlangıç değerini girin: "))
+        int_deger4 = int(input("Fibonacci dizisinin bir önceki değerini girin: "))
         sonuc = hizlandirici(int_deger1, int_deger2, int_deger3, int_deger4)
         print(f"Fibonacci({int_deger1}) = {sonuc}")
 
     elif secim == "11":
         print("Programdan çıkılıyor.")
         break
+
+    else:
+        print("Geçersiz seçenek! Lütfen 1 ile 9 arasında bir seçenek girin.")
 
     else:
         print("Geçersiz seçenek! Lütfen 1 ile 9 arasında bir seçenek girin.")
